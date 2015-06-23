@@ -48,6 +48,8 @@ META =
 
 vec2 = function(x, y) return setmetatable({x = math.float(x or 0,4), y = math.float(y or x or 0,4)}, META) end
 
+Vector2 = vec2
+
 --[[
 Uncomment for see results
 
