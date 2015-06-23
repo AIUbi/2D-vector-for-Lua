@@ -48,7 +48,7 @@ META =
 
 vec2 = function(x, y) return setmetatable({x = math.float(x or 0,4), y = math.float(y or x or 0,4)}, META) end
 
-/*
+--[[
 Uncomment for see results
 
 print("Clamp vectors:", vec2(1, 0):clamp(vec2(0, 0), vec2(0.5, 0)))
@@ -62,4 +62,4 @@ print("Perpendecular from two points:", vec2(0, 1):perpendecular(vec2(1, 0)))
 print("Rotate on 35 degrees:", vec2(1, 0):rotate(35))
 print("Rotate on 90 degrees around axis:", vec2(1, 0):rotate_around_axis(90, vec(0, 1)))
 
-*/
+]]--
