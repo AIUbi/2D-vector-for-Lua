@@ -30,7 +30,7 @@ META =
 		local c = math.cos(ang)
 		local s = math.sin(ang)
 		
-		return vec2(lhs.x*c-lhs.y*s,lhs.x*s+lhs.y*c)
+		return vec2(lhs.x*c-lhs.y*s, lhs.x*s+lhs.y*c)
 		 
 	end,
 	
@@ -41,14 +41,12 @@ META =
 		local c = math.cos(ang)
 		local s = math.sin(ang)
 		
-		return vec2((pos.x+lhs.x)*c-(pos.y+lhs.y)*s,(pos.x+lhs.x)*s+(pos.y+lhs.y)*c)
+		return vec2((pos.x+lhs.x)*c-(pos.y+lhs.y)*s, (pos.x+lhs.x)*s+(pos.y+lhs.y)*c)
 
 	end,
 }
 
-vec2 = function(x, y) return setmetatable({x = math.float(x or 0,4), y = math.float(y or x or 0,4)}, META) end
-
-Vector2 = vec2
+vec2 = function(x, y) return setmetatable({x = math.floor(x or 0, 4), y = math.floor(y or x or 0, 4)}, META) end
 
 --[[
 Uncomment for see results
